@@ -1,11 +1,18 @@
 import './App.css';
 import DesktopHome from './page/desktopHome/DesktopHome';
+import { BrowserRouter } from "react-router-dom";
+
 
 function App() {
   return (
-    <div className="App">
-      <DesktopHome />
-    </div>
+    <BrowserRouter>
+      <div className="app">
+        <div className="container">
+          <DesktopHome />
+        </div>
+      </div>
+    </BrowserRouter>
+
   );
 }
 
